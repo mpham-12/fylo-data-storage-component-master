@@ -102,8 +102,59 @@ span {
     padding: 5px;
     border: 1px solid hsl(6, 100%, 80%);
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-   
-overflow: hidden;
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
     width: 75%;
   }
+.tip {
+    overflow: hidden;
+}
+  @media (min-width: 600px) {
+      body {
+          background-color: hsl(229, 57%, 11%);
+          background-image: url(images/bg-desktop.png);
+       background-size: cover;
+       background-position: 0px 380px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+      }
+      .card-1 {
+          position: relative;
+          top: 270px;
+          margin: 0px 5px;
+      }
+      .card-2 {
+          position: relative;
+          top: 270px;
+          margin: 0px 15px;
+          margin-top: 25px;
+          width: 400px;
+      }
+      .main-text {
+          text-align: start;
+      }
+      .card-3 {
+          display: flex;
+          flex-direction: row;
+          border-bottom-right-radius: 0px;
+          float: left;
+          position: relative;
+          top: 190px;
+          right: 250px;
+          width: 140px;
+      }
+      .gb-left {
+          position: relative;
+          top: 20px;
+          left: 15px;
+
+      }
+      .tip {
+        border-left:10px solid transparent;
+        border-bottom:30px solid transparent;
+        border-right: 20px solid #FFF;
+        position:absolute;
+        right: -1px;
+     top: 70px;
+      }
+  }
+
